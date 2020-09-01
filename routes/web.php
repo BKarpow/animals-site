@@ -24,9 +24,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'role:admin'], function() {
-    Route::get('/admin', function() {
-        return view('admin.home');
-    });
+    Route::get('/admin', 'AdminAnimalsController@index');
+    Route::get('/admin/animal-edit/{id}', 'AdminAnimalsController@edit');
+    Route::post('/admin/animal-edit-execute/{id}', 'AdminAnimalsController@update');
 });
 
 

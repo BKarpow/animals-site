@@ -4941,7 +4941,7 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #383838;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -10907,5 +10907,13 @@ a.text-dark:focus {
 body {
   background: #141414;
   color: #d2d2d2;
+}
+
+.card {
+  background: #2e2e2e;
+}
+
+.card-header {
+  background: #141414;
 }
 
