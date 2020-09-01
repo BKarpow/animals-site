@@ -23,9 +23,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['middleware' => 'role:project-manager'], function() {
+Route::group(['middleware' => 'role:admin'], function() {
     Route::get('/admin', function() {
-        return 'Добро пожаловать, Менеджер проекта';
+        return view('admin.home');
     });
 });
 

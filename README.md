@@ -18,3 +18,4 @@
 ## Версія 0.0.9
 
 - Додана система ролей з сайту [laravel.demiart.ru](https://laravel.demiart.ru/guide-to-roles-and-permissions/)
+- (0.0.91) Додана адмінка (тількі вхід)

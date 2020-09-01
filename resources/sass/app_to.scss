@@ -1,0 +1,12 @@
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+$bg: #141414;
+$color: #d2d2d2;
+
+body{
+    background: #141414;
+    color: #d2d2d2;
+}
