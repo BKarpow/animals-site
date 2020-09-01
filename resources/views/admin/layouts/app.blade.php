@@ -13,7 +13,7 @@
 <div id="menu"></div>
 <!-- /#menu -->
 <div id="panel">
-    <header class="container">
+    <header class="container mt-3">
         <div class="row justify-content-between align-items-center">
             <div class="col-md-4">
                 <h2>Адмінка</h2>
@@ -25,7 +25,7 @@
     </header>
     <main class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 @yield('admin-content')
             </div>
 
