@@ -23,6 +23,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::group(['middleware' => 'role:project-manager'], function() {
+    Route::get('/admin', function() {
+        return 'Добро пожаловать, Менеджер проекта';
+    });
+});
+
 
 
 Route::get('/{animal_id}', 'AnimalsController@showAnimalsFromId');
